@@ -1,0 +1,29 @@
+# Data files (never commit scraped data)
+data/
+*.csv
+*.db
+*.sqlite
+*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
