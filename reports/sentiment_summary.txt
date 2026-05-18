@@ -1,0 +1,44 @@
+Task 2: Sentiment and Thematic Analysis
+============================================================
+Loaded 1200 reviews
+Loading sentiment model: distilbert-base-uncased-finetuned-sst-2-english
+Loading weights: 100%|███████████████████████████████████████████████| 104/104 [00:00<00:00, 5498.65it/s]
+✓ Model loaded
+Classifying sentiment: 100%|█████████████████████████████████████████████| 38/38 [01:14<00:00,  1.97s/it]
+
+=== Running Improved Thematic Analysis ===
+
+Theme distribution:
+identified_theme
+Other                      807
+Transaction Performance    176
+Reliability / Crashes       77
+Account Access              53
+Feature Request             43
+UI & Design                 17
+Security                    15
+Customer Support            12
+Name: count, dtype: int64
+
+Percentage covered (non-Other): 32.8%
+
+✓ Enriched data saved to data/enriched_reviews.csv
+
+--- Sentiment by Bank ---
+sentiment_label              NEGATIVE  POSITIVE
+bank                                           
+Bank of Abyssinia               0.540     0.460
+Commercial Bank of Ethiopia     0.315     0.685
+Dashen Bank                     0.340     0.660
+
+--- Top Themes Overall ---
+identified_theme
+Other                      807
+Transaction Performance    176
+Reliability / Crashes       77
+Account Access              53
+Feature Request             43
+UI & Design                 17
+Security                    15
+Customer Support            12
+Name: count, dtype: int64
